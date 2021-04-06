@@ -105,7 +105,6 @@ async function setZoomPingInterval() {
     message: "Zoom ping interval in seconds:",
     name: "intervalValue",
     choices,
-    initial: 500,
   };
 
   const { intervalValue } = await prompts(intervalPrompt);
@@ -190,4 +189,14 @@ async function fullSetupMenu() {
   }
 }
 
-fullSetupMenu();
+async function checkSetup() {
+  let config = await readConfigFile();
+
+  if (config == null) {
+    await createConfigFile();
+  }
+
+  fullSetupMenu();
+}
+
+checkSetup()
