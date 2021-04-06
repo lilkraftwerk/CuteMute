@@ -1,0 +1,28 @@
+{
+  "name": "zoomhue",
+  "version": "1.0.0",
+  "description": "Show your Zoom mute status on a Hue light",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cli-box": "^6.0.10",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "node-hue-api": "^5.0.0-beta.2",
+    "prompts": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "prettier": "2.2.1"
+  },
+  "scripts": {
+    "start": "node index.js false",
+    "start-noisey": "node index.js true",
+    "format": "npx prettier --write .",
+    "setup": "node ./src/setup.js",
+    "helpers": "node ./src/helpers.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
