@@ -14,15 +14,15 @@ By training yourself, Pavlov's Dog-style, to associate the color of a physical l
 
 ## Get Started
 
-* `npm install`
-* Make sure you're on the same network as your Hue bridge
-* `npm run setup`
+- `npm install`
+- Make sure you're on the same network as your Hue bridge
+- `npm run setup`
 
 You'll be guided through linking to your Hue bridge, selecting the light you want to use, and choosing how often the script should ping your Zoom app for the current mute status.
 
 After you've configured your Hue bridge and selected a light, run
 
-* `npm start`
+- `npm start`
 
 and join a Zoom meeting. It should work.
 
@@ -31,9 +31,9 @@ and join a Zoom meeting. It should work.
 ### `npm start`
 
 Run the program. Make sure you have run the setup script first.
- 
+
 ### `npm run setup`
- 
+
 Connect to your local Hue bridge, choose the light you want to use, and change how often the script checks your Zoom app for the current mute status.
 
 ### `npm run helpers`
