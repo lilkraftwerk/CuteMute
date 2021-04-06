@@ -39,3 +39,7 @@ Connect to your local Hue bridge, choose the light you want to use, and change h
 ### `npm run helpers`
 
 Pick from a few helper functions. List all of the lights found on your local Hue system, or manually test what your light will look like when you're muted or unmuted.
+
+## Change Muted/Unmuted Light State
+
+The default setting turns the light off when MUTED and turns the light red when UNMUTED. To change these settings, you can edit the light states in `./src/lightStates.js`. The options are based on the `LightState` class from the `node-hue-api`, which you can read about [here](https://github.com/peter-murray/node-hue-api/blob/d2355202ac6f4bb74c0733fb4739e7c7fcb34e0d/docs/lightState.md).

@@ -14,7 +14,6 @@ async function helperMenu() {
     console.log("No config file found. Run `node run setup` first.");
     return;
   }
-  const { USERNAME, LIGHT_NAME, CHECK_INTERVAL } = config;
 
   const choices = [
     { title: "test muted light state", value: "testMuted" },
